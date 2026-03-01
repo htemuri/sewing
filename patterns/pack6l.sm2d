@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Seamly2D v0.6.0.1 (https://seamly.io).-->
+    <version>0.7.3</version>
+    <unit>cm</unit>
+    <description/>
+    <notes/>
+    <measurements/>
+    <variables>
+        <variable description="" formula="17" name="#pack6L_final_width"/>
+        <variable description="" formula="35" name="#pack6L_final_height"/>
+        <variable description="" formula="9" name="#pack6L_final_depth"/>
+        <variable description="" formula="0.72" name="#zipper_8_tooth_size"/>
+        <variable description="" formula="3.2" name="#zipper_8_nominal_width"/>
+    </variables>
+    <draftBlock name="pack_6L">
+        <calculation>
+            <point id="1" mx="-1.98437" my="-0.23813" name="A0" showPointName="true" type="single" x="-16.9371" y="-7.5125"/>
+            <point angle="0" basePoint="1" id="2" length="#pack6L_final_width" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A1" showPointName="true" type="endLine"/>
+            <point angle="0" firstPoint="2" id="3" length="#pack6L_final_depth" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A2" secondPoint="1" showPointName="true" type="normal"/>
+            <point angle="180" firstPoint="1" id="4" length="#pack6L_final_depth" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A3" secondPoint="2" showPointName="true" type="normal"/>
+            <point firstPoint="1" id="5" length="CurrentLength/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A4" secondPoint="4" showPointName="true" type="alongLine"/>
+            <point firstPoint="5" id="6" length="#zipper_8_tooth_size+0.2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A5" secondPoint="4" showPointName="true" type="alongLine"/>
+            <point firstPoint="2" id="7" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A6" secondPoint="6" showPointName="true" type="intersectXY"/>
+            <point firstPoint="2" id="8" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A7" secondPoint="5" showPointName="true" type="intersectXY"/>
+            <line firstPoint="4" id="9" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="3"/>
+            <line firstPoint="5" id="10" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="6"/>
+            <point angle="180" basePoint="1" id="11" length="#pack6L_final_height" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A8" showPointName="true" type="endLine"/>
+            <point firstPoint="11" id="12" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A9" secondPoint="4" showPointName="true" type="intersectXY"/>
+            <point firstPoint="1" id="13" length="Line_A0_A8/3" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A10" secondPoint="11" showPointName="true" type="alongLine"/>
+            <point firstPoint="5" id="14" length="CurrentLength/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A11" secondPoint="8" showPointName="true" type="alongLine"/>
+            <point firstPoint="13" id="15" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A12" secondPoint="4" showPointName="true" type="intersectXY"/>
+            <point firstPoint="13" id="16" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A13" secondPoint="5" showPointName="true" type="intersectXY"/>
+            <point firstPoint="16" id="17" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A14" secondPoint="6" showPointName="true" type="intersectXY"/>
+            <operation axisType="1" center="14" id="18" suffix="_r" type="flippingByAxis">
+                <source>
+                    <item alias="" color="black" idObject="13" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="16" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="17" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="15" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="12" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="11" lineType="solidLine"/>
+                </source>
+                <destination>
+                    <item idObject="19" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="20" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="21" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="22" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="23" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="24" mx="0.132292" my="0.264583" showPointName="true"/>
+                </destination>
+            </operation>
+            <line firstPoint="2" id="25" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="24"/>
+            <line firstPoint="24" id="26" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="23"/>
+            <line firstPoint="23" id="27" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="3"/>
+            <line firstPoint="21" id="28" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="20"/>
+            <line firstPoint="20" id="29" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="8"/>
+            <line firstPoint="21" id="30" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="7"/>
+            <line firstPoint="19" id="31" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="22"/>
+            <point firstPoint="16" id="56" length="(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.237705" name="Z0" secondPoint="13" showPointName="true" type="alongLine"/>
+            <point firstPoint="20" id="57" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="Z1" secondPoint="56" showPointName="true" type="intersectXY"/>
+            <point angle="270" basePoint="56" id="59" length="#zipper_8_nominal_width" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="Z3" showPointName="true" type="endLine"/>
+            <point firstPoint="21" id="60" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="Z2" secondPoint="59" showPointName="true" type="intersectXY"/>
+            <operation angle="267.473" center="0" id="61" length="16.33" rotationAngle="0" suffix="_a1" type="moving">
+                <source>
+                    <item alias="" color="black" idObject="59" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="56" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="57" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="60" lineType="solidLine"/>
+                </source>
+                <destination>
+                    <item idObject="62" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="63" mx="0.132292" my="0.237705" showPointName="true"/>
+                    <item idObject="64" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="65" mx="0.132292" my="0.264583" showPointName="true"/>
+                </destination>
+            </operation>
+            <point firstPoint="63" id="66" length="(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="Z4" secondPoint="62" showPointName="true" type="alongLine"/>
+            <point firstPoint="62" id="67" length="(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="Z5" secondPoint="63" showPointName="true" type="alongLine"/>
+            <point firstPoint="64" id="68" length="(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="Z6" secondPoint="65" showPointName="true" type="alongLine"/>
+            <point firstPoint="65" id="69" length="(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="Z7" secondPoint="64" showPointName="true" type="alongLine"/>
+        </calculation>
+        <modeling>
+            <point id="32" idObject="12" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="33" idObject="11" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="34" idObject="13" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="35" idObject="15" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="37" idObject="17" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="38" idObject="16" inUse="true" mx="-4.35715" my="0.690589" showPointName="true" type="modeling"/>
+            <point id="39" idObject="13" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="40" idObject="1" inUse="true" mx="-1.98437" my="-0.23813" showPointName="true" type="modeling"/>
+            <point id="41" idObject="2" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="42" idObject="19" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="43" idObject="20" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="44" idObject="21" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="46" idObject="15" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="47" idObject="17" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="48" idObject="21" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="49" idObject="22" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="51" idObject="4" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="52" idObject="1" inUse="true" mx="-1.98437" my="-0.23813" showPointName="true" type="modeling"/>
+            <point id="53" idObject="2" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="54" idObject="3" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="70" idObject="16" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="71" idObject="20" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="72" inUse="true" lineColor="black" lineType="dotLine" lineWeight="0.35" name="top_stitch" type="2">
+                <nodes>
+                    <node idObject="70" type="NodePoint"/>
+                    <node idObject="71" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="73" idObject="62" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="74" idObject="67" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="75" idObject="66" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="76" idObject="63" inUse="true" mx="0.132292" my="0.237705" showPointName="false" type="modeling"/>
+            <point id="77" idObject="64" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="78" idObject="68" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="79" idObject="69" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="80" idObject="65" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="82" idObject="66" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="83" idObject="68" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="84" idObject="69" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="85" idObject="67" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="86" idObject="66" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="87" inUse="true" lineColor="black" lineType="solidLine" lineWeight="0.35" name="zipper_teeth" type="2">
+                <nodes>
+                    <node idObject="82" type="NodePoint"/>
+                    <node idObject="83" type="NodePoint"/>
+                    <node idObject="84" type="NodePoint"/>
+                    <node idObject="85" type="NodePoint"/>
+                    <node idObject="86" type="NodePoint"/>
+                </nodes>
+            </path>
+        </modeling>
+        <pieces>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="36" inLayout="true" locked="false" mx="0.499987" my="0.37499" name="lower_side_pan" seamAllowance="true" united="false" version="2" width="1">
+                <data annotation="" foldPosition="Undefined" fontSize="35" height="1.40122" letter="SB" mx="-1407.97" my="-151.654" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="6.88923">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
+                </data>
+                <patternInfo fontSize="0" height="2" mx="-1799.2" my="-151.654" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-1520.03" my="-69.4583" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="32" type="NodePoint"/>
+                    <node idObject="33" type="NodePoint"/>
+                    <node idObject="34" type="NodePoint"/>
+                    <node idObject="35" type="NodePoint"/>
+                </nodes>
+            </piece>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="45" inLayout="true" locked="false" mx="0.357913" my="-11.3723" name="top_lap" seamAllowance="true" united="false" version="2" width="1">
+                <data annotation="" foldPosition="Undefined" fontSize="34" height="1.97421" letter="TL" mx="-868.031" my="-231.995" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3.15477">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
+                </data>
+                <patternInfo fontSize="0" height="2" mx="-756.678" my="-219.307" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-318.883" my="-131.112" rotation="90" visible="true"/>
+                <nodes>
+                    <node before="Line_A13_A14+(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" idObject="37" type="NodePoint"/>
+                    <node idObject="38" type="NodePoint"/>
+                    <node idObject="39" type="NodePoint"/>
+                    <node idObject="40" type="NodePoint"/>
+                    <node idObject="41" type="NodePoint"/>
+                    <node idObject="42" type="NodePoint"/>
+                    <node idObject="43" type="NodePoint"/>
+                    <node after="Line_A13_A14+(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" idObject="44" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="72"/>
+                </iPaths>
+            </piece>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="50" inLayout="true" locked="false" mx="7.8748" my="-0.916643" name="top_normal" seamAllowance="true" united="false" version="2" width="1">
+                <data annotation="" foldPosition="Undefined" fontSize="33" height="1.40673" letter="TN" mx="5.52693" my="-49.2283" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="5.03775">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
+                </data>
+                <patternInfo fontSize="0" height="2" mx="-756.678" my="-49.2283" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-318.883" my="38.9669" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="46" type="NodePoint"/>
+                    <node after="(#zipper_8_nominal_width-#zipper_8_tooth_size)" idObject="47" type="NodePoint"/>
+                    <node before="(#zipper_8_nominal_width-#zipper_8_tooth_size)" idObject="48" type="NodePoint"/>
+                    <node idObject="49" type="NodePoint"/>
+                </nodes>
+            </piece>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="55" inLayout="true" locked="false" mx="-35.7039" my="21.0446" name="bottom" seamAllowance="true" united="false" version="2" width="1">
+                <data annotation="" foldPosition="Undefined" fontSize="0" height="2" letter="B" mx="-287.322" my="-139.067" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
+                </data>
+                <patternInfo fontSize="0" height="2" mx="-536.205" my="-151.654" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-318.883" my="-63.4583" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="51" type="NodePoint"/>
+                    <node idObject="52" type="NodePoint"/>
+                    <node idObject="53" type="NodePoint"/>
+                    <node idObject="54" type="NodePoint"/>
+                </nodes>
+            </piece>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="81" inLayout="true" locked="false" mx="7.8748" my="-0.916643" name="mock_zipper" seamAllowance="true" united="false" version="2" width="0">
+                <data annotation="" foldPosition="Undefined" fontSize="0" height="2" letter="Z" mx="-21.6854" my="478.549" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
+                </data>
+                <patternInfo fontSize="0" height="2" mx="-783.89" my="478.549" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-346.095" my="566.745" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="73" type="NodePoint"/>
+                    <node idObject="74" type="NodePoint"/>
+                    <node idObject="75" type="NodePoint"/>
+                    <node idObject="76" type="NodePoint"/>
+                    <node idObject="77" type="NodePoint"/>
+                    <node idObject="78" type="NodePoint"/>
+                    <node idObject="79" type="NodePoint"/>
+                    <node idObject="80" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="87"/>
+                </iPaths>
+            </piece>
+        </pieces>
+        <groups>
+            <group groupColor="blue" id="58" lineType="solidLine" lineWeight="0" locked="false" name="Zipper" visible="false">
+                <item object="57" tool="57"/>
+                <item object="56" tool="56"/>
+                <item object="59" tool="59"/>
+                <item object="60" tool="60"/>
+                <item object="62" tool="61"/>
+                <item object="63" tool="61"/>
+                <item object="64" tool="61"/>
+                <item object="65" tool="61"/>
+                <item object="66" tool="66"/>
+                <item object="67" tool="67"/>
+                <item object="68" tool="68"/>
+                <item object="69" tool="69"/>
+            </group>
+        </groups>
+        <images/>
+    </draftBlock>
+</pattern>
