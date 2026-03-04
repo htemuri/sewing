@@ -6,10 +6,14 @@
     <description/>
     <notes/>
     <measurements/>
-    <variables/>
+    <variables>
+        <variable description="" formula="30" name="#final_width"/>
+        <variable description="" formula="60" name="#final_height"/>
+        <variable description="" formula="22" name="#final_depth"/>
+    </variables>
     <draftBlock name="pack_40L">
         <calculation>
-            <point id="1" mx="0.132292" my="0.264583" name="A" showPointName="true" type="single" x="0.79375" y="1.05833"/>
+            <point id="1" mx="0.132292" my="0.264583" name="A" showPointName="true" type="single" x="-0.274491" y="0.285167"/>
         </calculation>
         <modeling/>
         <pieces/>
