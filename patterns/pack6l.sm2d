@@ -10,26 +10,27 @@
         <variable description="" formula="17" name="#pack6L_final_width"/>
         <variable description="" formula="35" name="#pack6L_final_height"/>
         <variable description="" formula="9" name="#pack6L_final_depth"/>
-        <variable description="" formula="0.72" name="#zipper_8_tooth_size"/>
-        <variable description="" formula="3.2" name="#zipper_8_nominal_width"/>
+        <variable description="" formula="0.7" name="#zipper_8_tooth_size"/>
+        <variable description="" formula="3.8" name="#zipper_8_nominal_width"/>
+        <variable description="" formula="3.8" name="#molle_tack_gap"/>
     </variables>
     <draftBlock name="pack_6L">
         <calculation>
             <point id="1" mx="-1.98437" my="-0.23813" name="A0" showPointName="true" type="single" x="-16.9371" y="-7.5125"/>
             <point angle="0" basePoint="1" id="2" length="#pack6L_final_width" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A1" showPointName="true" type="endLine"/>
-            <point angle="0" firstPoint="2" id="3" length="#pack6L_final_depth" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A2" secondPoint="1" showPointName="true" type="normal"/>
-            <point angle="180" firstPoint="1" id="4" length="#pack6L_final_depth" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A3" secondPoint="2" showPointName="true" type="normal"/>
-            <point firstPoint="1" id="5" length="CurrentLength/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A4" secondPoint="4" showPointName="true" type="alongLine"/>
-            <point firstPoint="5" id="6" length="#zipper_8_tooth_size+0.2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A5" secondPoint="4" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="2" id="3" length="#pack6L_final_depth" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="3.08693" my="0.388989" name="A2" secondPoint="1" showPointName="true" type="normal"/>
+            <point angle="180" firstPoint="1" id="4" length="#pack6L_final_depth" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="-1.98261" my="0.731105" name="A3" secondPoint="2" showPointName="true" type="normal"/>
+            <point firstPoint="1" id="5" length="CurrentLength/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.820209" my="-2.19604" name="A4" secondPoint="4" showPointName="true" type="alongLine"/>
+            <point firstPoint="5" id="6" length="#zipper_8_tooth_size+0.2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.0532379" my="0.264583" name="A5" secondPoint="4" showPointName="true" type="alongLine"/>
             <point firstPoint="2" id="7" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A6" secondPoint="6" showPointName="true" type="intersectXY"/>
             <point firstPoint="2" id="8" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A7" secondPoint="5" showPointName="true" type="intersectXY"/>
             <line firstPoint="4" id="9" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="3"/>
             <line firstPoint="5" id="10" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="6"/>
             <point angle="180" basePoint="1" id="11" length="#pack6L_final_height" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A8" showPointName="true" type="endLine"/>
             <point firstPoint="11" id="12" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A9" secondPoint="4" showPointName="true" type="intersectXY"/>
-            <point firstPoint="1" id="13" length="Line_A0_A8/3" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A10" secondPoint="11" showPointName="true" type="alongLine"/>
+            <point firstPoint="1" id="13" length="#pack6L_final_height*(6/14)" lineColor="black" lineType="none" lineWeight="0.35" mx="0.105406" my="0.264583" name="A10" secondPoint="11" showPointName="true" type="alongLine"/>
             <point firstPoint="5" id="14" length="CurrentLength/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A11" secondPoint="8" showPointName="true" type="alongLine"/>
-            <point firstPoint="13" id="15" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A12" secondPoint="4" showPointName="true" type="intersectXY"/>
+            <point firstPoint="13" id="15" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.171819" my="0.264583" name="A12" secondPoint="4" showPointName="true" type="intersectXY"/>
             <point firstPoint="13" id="16" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A13" secondPoint="5" showPointName="true" type="intersectXY"/>
             <point firstPoint="16" id="17" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A14" secondPoint="6" showPointName="true" type="intersectXY"/>
             <operation axisType="1" center="14" id="18" suffix="_r" type="flippingByAxis">
@@ -79,12 +80,121 @@
             <point firstPoint="62" id="67" length="(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="Z5" secondPoint="63" showPointName="true" type="alongLine"/>
             <point firstPoint="64" id="68" length="(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="Z6" secondPoint="65" showPointName="true" type="alongLine"/>
             <point firstPoint="65" id="69" length="(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="Z7" secondPoint="64" showPointName="true" type="alongLine"/>
+            <line firstPoint="13" id="88" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="19"/>
+            <point angle="0" basePoint="24" id="89" length="#pack6L_final_width" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A15" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="4" id="90" length="#pack6L_final_height" lineColor="black" lineType="solidLine" lineWeight="0.35" mx="-1.60939" my="3.00151" name="A16" showPointName="true" type="endLine"/>
+            <point firstPoint="24" id="91" length="CurrentLength/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A17" secondPoint="89" showPointName="true" type="alongLine"/>
+            <operation axisType="1" center="91" id="92" suffix="_a2" type="flippingByAxis">
+                <source>
+                    <item alias="" color="black" idObject="19" lineType="solidLine"/>
+                </source>
+                <destination>
+                    <item idObject="93" mx="0.132292" my="0.264583" showPointName="true"/>
+                </destination>
+            </operation>
+            <point firstPoint="93" id="94" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A18" secondPoint="23" showPointName="true" type="intersectXY"/>
+            <point firstPoint="89" id="95" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A19" secondPoint="23" showPointName="true" type="intersectXY"/>
+            <line firstPoint="89" id="96" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="93"/>
+            <point firstPoint="3" id="119" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="2.24719" my="3.12592" name="A20" secondPoint="90" showPointName="true" type="intersectXY"/>
+            <point firstPoint="90" id="120" length="#pack6L_final_width*(1/6)" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A21" secondPoint="119" showPointName="true" type="alongLine"/>
+            <point firstPoint="120" id="121" length="2.5" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A22" secondPoint="119" showPointName="true" type="alongLine"/>
+            <point firstPoint="120" id="122" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A23" secondPoint="4" showPointName="true" type="intersectXY"/>
+            <point firstPoint="121" id="123" lineColor="black" lineType="dashLine" lineWeight="0.35" mx="0.132292" my="0.264583" name="A24" secondPoint="122" showPointName="true" type="intersectXY"/>
+            <point firstPoint="4" id="124" length="#pack6L_final_height*(1/8)" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A25" secondPoint="90" showPointName="true" type="alongLine"/>
+            <point firstPoint="124" id="125" length="#pack6L_final_height*(1/4)" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A26" secondPoint="90" showPointName="true" type="alongLine"/>
+            <point firstPoint="125" id="126" length="#pack6L_final_height*(1/4)" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A27" secondPoint="90" showPointName="true" type="alongLine"/>
+            <point firstPoint="126" id="127" length="#pack6L_final_height*(1/4)" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="A28" secondPoint="90" showPointName="true" type="alongLine"/>
+            <operation axisType="1" center="14" id="128" suffix="_a3" type="flippingByAxis">
+                <source>
+                    <item alias="" color="black" idObject="123" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="122" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="124" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="125" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="126" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="127" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="120" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="121" lineType="solidLine"/>
+                </source>
+                <destination>
+                    <item idObject="129" mx="-2.31846" my="-2.02806" showPointName="true"/>
+                    <item idObject="130" mx="-1.17214" my="2.28052" showPointName="true"/>
+                    <item idObject="131" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="132" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="133" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="134" mx="0.629916" my="0.793308" showPointName="true"/>
+                    <item idObject="135" mx="1.35767" my="2.35958" showPointName="true"/>
+                    <item idObject="136" mx="-0.579217" my="2.28052" showPointName="true"/>
+                </destination>
+            </operation>
+            <line firstPoint="129" id="137" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="136"/>
+            <line firstPoint="130" id="138" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="135"/>
+            <line firstPoint="124" id="139" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="131"/>
+            <line firstPoint="125" id="140" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="132"/>
+            <line firstPoint="126" id="141" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="133"/>
+            <line firstPoint="127" id="142" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="134"/>
+            <line firstPoint="120" id="143" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="122"/>
+            <line firstPoint="121" id="144" lineColor="black" lineType="solidLine" lineWeight="0.35" secondPoint="123"/>
+            <point firstPoint="124" id="190" length="2.6" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="B1" secondPoint="125" showPointName="true" type="alongLine"/>
+            <point firstPoint="190" id="191" length="2.6" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="B2" secondPoint="125" showPointName="true" type="alongLine"/>
+            <point firstPoint="191" id="192" length="2.6" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="B3" secondPoint="125" showPointName="true" type="alongLine"/>
+            <point firstPoint="4" id="193" length="CurrentLength/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="B4" secondPoint="90" showPointName="true" type="alongLine"/>
+            <point firstPoint="4" id="195" length="CurrentLength/2" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="B5" secondPoint="3" showPointName="true" type="alongLine"/>
+            <point firstPoint="195" id="196" length="#molle_tack_gap" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="B6" secondPoint="4" showPointName="true" type="alongLine"/>
+            <point firstPoint="196" id="197" length="#molle_tack_gap" lineColor="black" lineType="none" lineWeight="0.35" mx="0.132292" my="0.264583" name="B7" secondPoint="4" showPointName="true" type="alongLine"/>
+            <operation axisType="1" center="14" id="198" suffix="_a4" type="flippingByAxis">
+                <source>
+                    <item alias="" color="black" idObject="192" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="191" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="190" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="197" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="196" lineType="solidLine"/>
+                </source>
+                <destination>
+                    <item idObject="199" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="200" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="201" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="202" mx="-3.47548" my="-1.88142" showPointName="true"/>
+                    <item idObject="203" mx="-0.520839" my="0.357887" showPointName="true"/>
+                </destination>
+            </operation>
+            <operation axisType="2" center="193" id="204" suffix="_a5" type="flippingByAxis">
+                <source>
+                    <item alias="" color="black" idObject="192" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="191" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="190" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="124" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="197" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="196" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="195" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="203" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="202" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="131" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="201" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="200" lineType="solidLine"/>
+                    <item alias="" color="black" idObject="199" lineType="solidLine"/>
+                </source>
+                <destination>
+                    <item idObject="205" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="206" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="207" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="208" mx="-5.37267" my="0.637801" showPointName="true"/>
+                    <item idObject="209" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="210" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="211" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="212" mx="-0.427535" my="2.19288" showPointName="true"/>
+                    <item idObject="213" mx="-1.42278" my="4.36998" showPointName="true"/>
+                    <item idObject="214" mx="5.60615" my="-0.761766" showPointName="true"/>
+                    <item idObject="215" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="216" mx="0.132292" my="0.264583" showPointName="true"/>
+                    <item idObject="217" mx="0.132292" my="0.264583" showPointName="true"/>
+                </destination>
+            </operation>
         </calculation>
         <modeling>
-            <point id="32" idObject="12" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="33" idObject="11" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="34" idObject="13" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="35" idObject="15" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="32" idObject="12" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="33" idObject="11" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="34" idObject="13" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="35" idObject="15" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
             <point id="37" idObject="17" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
             <point id="38" idObject="16" inUse="true" mx="-4.35715" my="0.690589" showPointName="true" type="modeling"/>
             <point id="39" idObject="13" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
@@ -93,14 +203,14 @@
             <point id="42" idObject="19" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
             <point id="43" idObject="20" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
             <point id="44" idObject="21" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="46" idObject="15" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="47" idObject="17" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="48" idObject="21" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="49" idObject="22" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="51" idObject="4" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="52" idObject="1" inUse="true" mx="-1.98437" my="-0.23813" showPointName="true" type="modeling"/>
-            <point id="53" idObject="2" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="54" idObject="3" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="46" idObject="15" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="47" idObject="17" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="48" idObject="21" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="49" idObject="22" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="51" idObject="4" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="52" idObject="1" inUse="false" mx="-1.98437" my="-0.23813" showPointName="true" type="modeling"/>
+            <point id="53" idObject="2" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="54" idObject="3" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
             <point id="70" idObject="16" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
             <point id="71" idObject="20" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
             <path cut="false" extendEndPoint="false" extendStartPoint="false" id="72" inUse="true" lineColor="black" lineType="dotLine" lineWeight="0.35" name="top_stitch" type="2">
@@ -109,20 +219,20 @@
                     <node idObject="71" type="NodePoint"/>
                 </nodes>
             </path>
-            <point id="73" idObject="62" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
-            <point id="74" idObject="67" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
-            <point id="75" idObject="66" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
-            <point id="76" idObject="63" inUse="true" mx="0.132292" my="0.237705" showPointName="false" type="modeling"/>
-            <point id="77" idObject="64" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
-            <point id="78" idObject="68" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
-            <point id="79" idObject="69" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
-            <point id="80" idObject="65" inUse="true" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
-            <point id="82" idObject="66" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="83" idObject="68" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="84" idObject="69" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="85" idObject="67" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <point id="86" idObject="66" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
-            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="87" inUse="true" lineColor="black" lineType="solidLine" lineWeight="0.35" name="zipper_teeth" type="2">
+            <point id="73" idObject="62" inUse="false" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="74" idObject="67" inUse="false" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="75" idObject="66" inUse="false" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="76" idObject="63" inUse="false" mx="0.132292" my="0.237705" showPointName="false" type="modeling"/>
+            <point id="77" idObject="64" inUse="false" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="78" idObject="68" inUse="false" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="79" idObject="69" inUse="false" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="80" idObject="65" inUse="false" mx="0.132292" my="0.264583" showPointName="false" type="modeling"/>
+            <point id="82" idObject="66" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="83" idObject="68" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="84" idObject="69" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="85" idObject="67" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="86" idObject="66" inUse="false" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="87" inUse="false" lineColor="black" lineType="solidLine" lineWeight="0.35" name="zipper_teeth" type="2">
                 <nodes>
                     <node idObject="82" type="NodePoint"/>
                     <node idObject="83" type="NodePoint"/>
@@ -131,85 +241,336 @@
                     <node idObject="86" type="NodePoint"/>
                 </nodes>
             </path>
+            <point id="97" idObject="22" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="98" idObject="19" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="99" idObject="24" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="100" idObject="89" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="101" idObject="93" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="102" idObject="94" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="103" idObject="95" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="104" idObject="23" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="106" idObject="16" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="107" idObject="5" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="108" idObject="8" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="109" idObject="20" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="110" idObject="15" inUse="true" mx="0.171819" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="111" idObject="16" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="112" idObject="5" inUse="true" mx="0.820209" my="-2.19604" showPointName="true" type="modeling"/>
+            <point id="113" idObject="8" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="114" idObject="20" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="115" idObject="22" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="116" idObject="3" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="117" idObject="4" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="145" idObject="90" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="146" idObject="127" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="147" idObject="126" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="148" idObject="125" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="149" idObject="124" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="150" idObject="4" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="151" idObject="122" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="152" idObject="123" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="153" idObject="129" inUse="true" mx="-3.18985" my="1.355" showPointName="true" type="modeling"/>
+            <point id="154" idObject="130" inUse="true" mx="-1.17214" my="2.28052" showPointName="true" type="modeling"/>
+            <point id="155" idObject="3" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="156" idObject="131" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="157" idObject="132" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="158" idObject="133" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="159" idObject="134" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="160" idObject="119" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="161" idObject="135" inUse="true" mx="1.35767" my="2.35958" showPointName="true" type="modeling"/>
+            <point id="162" idObject="136" inUse="true" mx="-0.579217" my="2.28052" showPointName="true" type="modeling"/>
+            <point id="163" idObject="121" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="164" idObject="120" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="166" idObject="127" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="167" idObject="134" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="168" inUse="true" lineColor="blue" lineType="dashDotDotLine" lineWeight="0.35" name="bartack" type="2">
+                <nodes>
+                    <node idObject="166" type="NodePoint"/>
+                    <node idObject="167" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="169" idObject="126" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="170" idObject="133" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="171" inUse="true" lineColor="blue" lineType="dashDotDotLine" lineWeight="0.35" name="bartack_1" type="2">
+                <nodes>
+                    <node idObject="169" type="NodePoint"/>
+                    <node idObject="170" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="172" idObject="125" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="173" idObject="132" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="174" inUse="true" lineColor="blue" lineType="dashDotDotLine" lineWeight="0.35" name="bartack_2" type="2">
+                <nodes>
+                    <node idObject="172" type="NodePoint"/>
+                    <node idObject="173" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="175" idObject="124" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="176" idObject="131" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="177" inUse="true" lineColor="blue" lineType="dashDotDotLine" lineWeight="0.35" name="bartack_3" type="2">
+                <nodes>
+                    <node idObject="175" type="NodePoint"/>
+                    <node idObject="176" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="178" idObject="122" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="179" idObject="120" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="180" inUse="true" lineColor="black" lineType="dotLine" lineWeight="0.35" name="web" type="2">
+                <nodes>
+                    <node idObject="178" type="NodePoint"/>
+                    <node idObject="179" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="181" idObject="123" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="182" idObject="121" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="183" inUse="true" lineColor="black" lineType="dotLine" lineWeight="0.35" name="web_1" type="2">
+                <nodes>
+                    <node idObject="181" type="NodePoint"/>
+                    <node idObject="182" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="184" idObject="129" inUse="true" mx="-2.31846" my="-2.02806" showPointName="true" type="modeling"/>
+            <point id="185" idObject="136" inUse="true" mx="-0.579217" my="2.28052" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="186" inUse="true" lineColor="black" lineType="dotLine" lineWeight="0.35" name="web_2" type="2">
+                <nodes>
+                    <node idObject="184" type="NodePoint"/>
+                    <node idObject="185" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="187" idObject="130" inUse="true" mx="-1.17214" my="2.28052" showPointName="true" type="modeling"/>
+            <point id="188" idObject="135" inUse="true" mx="1.35767" my="2.35958" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="189" inUse="true" lineColor="black" lineType="dotLine" lineWeight="0.35" name="web_3" type="2">
+                <nodes>
+                    <node idObject="187" type="NodePoint"/>
+                    <node idObject="188" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="218" idObject="90" inUse="true" mx="-1.60939" my="3.00151" showPointName="true" type="modeling"/>
+            <point id="219" idObject="208" inUse="true" mx="-5.37267" my="0.637801" showPointName="true" type="modeling"/>
+            <point id="220" idObject="207" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="221" idObject="206" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="222" idObject="205" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="223" idObject="192" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="224" idObject="191" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="225" idObject="190" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="226" idObject="124" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="227" idObject="4" inUse="true" mx="-1.98261" my="0.731105" showPointName="true" type="modeling"/>
+            <point id="228" idObject="197" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="229" idObject="196" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="230" idObject="195" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="231" idObject="203" inUse="true" mx="-0.520839" my="0.357887" showPointName="true" type="modeling"/>
+            <point id="232" idObject="202" inUse="true" mx="-3.47548" my="-1.88142" showPointName="true" type="modeling"/>
+            <point id="233" idObject="3" inUse="true" mx="3.08693" my="0.388989" showPointName="true" type="modeling"/>
+            <point id="234" idObject="131" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="235" idObject="201" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="236" idObject="200" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="237" idObject="199" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="238" idObject="217" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="239" idObject="216" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="240" idObject="215" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="241" idObject="214" inUse="true" mx="5.60615" my="-0.761766" showPointName="true" type="modeling"/>
+            <point id="242" idObject="119" inUse="true" mx="2.24719" my="3.12592" showPointName="true" type="modeling"/>
+            <point id="243" idObject="213" inUse="true" mx="-1.42278" my="4.36998" showPointName="true" type="modeling"/>
+            <point id="244" idObject="212" inUse="true" mx="-0.427535" my="2.19288" showPointName="true" type="modeling"/>
+            <point id="245" idObject="211" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="246" idObject="210" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="247" idObject="209" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="249" idObject="124" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="250" idObject="131" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="251" idObject="201" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="252" idObject="190" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="253" idObject="191" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="254" idObject="200" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="255" idObject="199" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="256" idObject="192" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="257" idObject="205" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="258" idObject="217" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="259" idObject="216" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="260" idObject="206" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="261" idObject="207" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="262" idObject="215" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="263" idObject="214" inUse="true" mx="5.60615" my="-0.761766" showPointName="true" type="modeling"/>
+            <point id="264" idObject="208" inUse="true" mx="-5.37267" my="0.637801" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="265" inUse="true" lineColor="black" lineType="dotLine" lineWeight="0.35" name="web" type="2">
+                <nodes>
+                    <node idObject="249" type="NodePoint"/>
+                    <node idObject="250" type="NodePoint"/>
+                    <node idObject="251" type="NodePoint"/>
+                    <node idObject="252" type="NodePoint"/>
+                    <node idObject="253" type="NodePoint"/>
+                    <node idObject="254" type="NodePoint"/>
+                    <node idObject="255" type="NodePoint"/>
+                    <node idObject="256" type="NodePoint"/>
+                    <node idObject="257" type="NodePoint"/>
+                    <node idObject="258" type="NodePoint"/>
+                    <node idObject="259" type="NodePoint"/>
+                    <node idObject="260" type="NodePoint"/>
+                    <node idObject="261" type="NodePoint"/>
+                    <node idObject="262" type="NodePoint"/>
+                    <node idObject="263" type="NodePoint"/>
+                    <node idObject="264" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="266" idObject="209" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="267" idObject="197" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="268" idObject="196" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="269" idObject="210" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="270" idObject="211" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="271" idObject="195" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="272" idObject="203" inUse="true" mx="-0.520839" my="0.357887" showPointName="true" type="modeling"/>
+            <point id="273" idObject="212" inUse="true" mx="-0.427535" my="2.19288" showPointName="true" type="modeling"/>
+            <point id="274" idObject="213" inUse="true" mx="-1.42278" my="4.36998" showPointName="true" type="modeling"/>
+            <point id="275" idObject="202" inUse="true" mx="-3.47548" my="-1.88142" showPointName="true" type="modeling"/>
+            <path cut="false" extendEndPoint="false" extendStartPoint="false" id="276" inUse="true" lineColor="blue" lineType="dashDotDotLine" lineWeight="0.35" name="bartack" type="2">
+                <nodes>
+                    <node idObject="266" type="NodePoint"/>
+                    <node idObject="267" type="NodePoint"/>
+                    <node idObject="268" type="NodePoint"/>
+                    <node idObject="269" type="NodePoint"/>
+                    <node idObject="270" type="NodePoint"/>
+                    <node idObject="271" type="NodePoint"/>
+                    <node idObject="272" type="NodePoint"/>
+                    <node idObject="273" type="NodePoint"/>
+                    <node idObject="274" type="NodePoint"/>
+                    <node idObject="275" type="NodePoint"/>
+                </nodes>
+            </path>
         </modeling>
         <pieces>
-            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="36" inLayout="true" locked="false" mx="0.499987" my="0.37499" name="lower_side_pan" seamAllowance="true" united="false" version="2" width="1">
-                <data annotation="" foldPosition="Undefined" fontSize="35" height="1.40122" letter="SB" mx="-1407.97" my="-151.654" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="6.88923">
-                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
-                </data>
-                <patternInfo fontSize="0" height="2" mx="-1799.2" my="-151.654" rotation="0" visible="true" width="3"/>
-                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-1520.03" my="-69.4583" rotation="90" visible="false"/>
-                <nodes>
-                    <node idObject="32" type="NodePoint"/>
-                    <node idObject="33" type="NodePoint"/>
-                    <node idObject="34" type="NodePoint"/>
-                    <node idObject="35" type="NodePoint"/>
-                </nodes>
-            </piece>
-            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="45" inLayout="true" locked="false" mx="0.357913" my="-11.3723" name="top_lap" seamAllowance="true" united="false" version="2" width="1">
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="45" inLayout="true" locked="false" mx="5.1868" my="-9.69632" name="top_lap" seamAllowance="true" united="false" version="2" width="1.3">
                 <data annotation="" foldPosition="Undefined" fontSize="34" height="1.97421" letter="TL" mx="-868.031" my="-231.995" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3.15477">
                     <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
                 </data>
                 <patternInfo fontSize="0" height="2" mx="-756.678" my="-219.307" rotation="0" visible="true" width="3"/>
-                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-318.883" my="-131.112" rotation="90" visible="true"/>
+                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-318.883" my="-131.112" rotation="90" visible="false"/>
                 <nodes>
-                    <node before="Line_A13_A14+(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" idObject="37" type="NodePoint"/>
-                    <node idObject="38" type="NodePoint"/>
+                    <node before="#zipper_8_nominal_width*2 - #zipper_8_tooth_size" excluded="true" idObject="37" type="NodePoint"/>
+                    <node before="#zipper_8_nominal_width*(5/3)" idObject="38" type="NodePoint"/>
                     <node idObject="39" type="NodePoint"/>
-                    <node idObject="40" type="NodePoint"/>
-                    <node idObject="41" type="NodePoint"/>
+                    <node idObject="40" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="tNotch" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="41" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="tNotch" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
                     <node idObject="42" type="NodePoint"/>
-                    <node idObject="43" type="NodePoint"/>
-                    <node after="Line_A13_A14+(#zipper_8_nominal_width-#zipper_8_tooth_size)/2" idObject="44" type="NodePoint"/>
+                    <node after="#zipper_8_nominal_width*(5/3)" idObject="43" type="NodePoint"/>
+                    <node after="#zipper_8_nominal_width*2 - #zipper_8_tooth_size" excluded="true" idObject="44" type="NodePoint"/>
                 </nodes>
                 <iPaths>
                     <record path="72"/>
                 </iPaths>
             </piece>
-            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="50" inLayout="true" locked="false" mx="7.8748" my="-0.916643" name="top_normal" seamAllowance="true" united="false" version="2" width="1">
-                <data annotation="" foldPosition="Undefined" fontSize="33" height="1.40673" letter="TN" mx="5.52693" my="-49.2283" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="5.03775">
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="105" inLayout="true" locked="false" mx="-46.1636" my="13.9345" name="Bottom Gusset" seamAllowance="true" united="false" version="2" width="1.3">
+                <data annotation="" foldPosition="Undefined" fontSize="43" height="1.54133" letter="" mx="1448.17" my="-172.186" onFold="false" orientation="Undefined" quantity="1" rotation="359.706" rotationWay="None" tilt="None" visible="true" width="8.11587">
                     <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
                 </data>
-                <patternInfo fontSize="0" height="2" mx="-756.678" my="-49.2283" rotation="0" visible="true" width="3"/>
-                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-318.883" my="38.9669" rotation="90" visible="false"/>
+                <patternInfo fontSize="0" height="2" mx="994.503" my="-151.654" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="1646.47" my="-63.4583" rotation="90" visible="false"/>
                 <nodes>
-                    <node idObject="46" type="NodePoint"/>
-                    <node after="(#zipper_8_nominal_width-#zipper_8_tooth_size)" idObject="47" type="NodePoint"/>
-                    <node before="(#zipper_8_nominal_width-#zipper_8_tooth_size)" idObject="48" type="NodePoint"/>
-                    <node idObject="49" type="NodePoint"/>
+                    <node idObject="97" type="NodePoint"/>
+                    <node idObject="98" type="NodePoint"/>
+                    <node idObject="99" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="tNotch" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="100" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="tNotch" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="101" type="NodePoint"/>
+                    <node idObject="102" type="NodePoint"/>
+                    <node idObject="103" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="tNotch" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="104" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="tNotch" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
                 </nodes>
             </piece>
-            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="55" inLayout="true" locked="false" mx="-35.7039" my="21.0446" name="bottom" seamAllowance="true" united="false" version="2" width="1">
-                <data annotation="" foldPosition="Undefined" fontSize="0" height="2" letter="B" mx="-287.322" my="-139.067" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3">
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="118" inLayout="true" locked="false" mx="4.99679" my="0.547958" name="Top normal" seamAllowance="true" united="false" version="2" width="1.3">
+                <data annotation="" foldPosition="Undefined" fontSize="35" height="1.25263" letter="" mx="-520.631" my="-62.3771" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="5.87738">
                     <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
                 </data>
-                <patternInfo fontSize="0" height="2" mx="-536.205" my="-151.654" rotation="0" visible="true" width="3"/>
-                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-318.883" my="-63.4583" rotation="90" visible="false"/>
+                <patternInfo fontSize="0" height="2" mx="-762.977" my="-66.6142" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-318.883" my="21.5811" rotation="90" visible="false"/>
                 <nodes>
-                    <node idObject="51" type="NodePoint"/>
-                    <node idObject="52" type="NodePoint"/>
-                    <node idObject="53" type="NodePoint"/>
-                    <node idObject="54" type="NodePoint"/>
+                    <node idObject="110" type="NodePoint"/>
+                    <node idObject="111" type="NodePoint"/>
+                    <node idObject="112" type="NodePoint"/>
+                    <node idObject="113" type="NodePoint"/>
+                    <node idObject="114" type="NodePoint"/>
+                    <node idObject="115" type="NodePoint"/>
+                    <node idObject="116" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="tNotch" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="117" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="tNotch" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
                 </nodes>
             </piece>
-            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="81" inLayout="true" locked="false" mx="7.8748" my="-0.916643" name="mock_zipper" seamAllowance="true" united="false" version="2" width="0">
-                <data annotation="" foldPosition="Undefined" fontSize="0" height="2" letter="Z" mx="-21.6854" my="478.549" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="3">
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="165" inLayout="true" locked="false" mx="48.2854" my="-24.0915" name="Front Face" seamAllowance="true" united="false" version="2" width="1.3">
+                <data annotation="" foldPosition="Undefined" fontSize="37" height="1.33206" letter="" mx="-406.512" my="670.076" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="5.27886">
                     <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
                 </data>
-                <patternInfo fontSize="0" height="2" mx="-783.89" my="478.549" rotation="0" visible="true" width="3"/>
-                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-346.095" my="566.745" rotation="90" visible="false"/>
+                <patternInfo fontSize="0" height="2" mx="-536.205" my="679.843" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-318.883" my="768.038" rotation="90" visible="false"/>
                 <nodes>
-                    <node idObject="73" type="NodePoint"/>
-                    <node idObject="74" type="NodePoint"/>
-                    <node idObject="75" type="NodePoint"/>
-                    <node idObject="76" type="NodePoint"/>
-                    <node idObject="77" type="NodePoint"/>
-                    <node idObject="78" type="NodePoint"/>
-                    <node idObject="79" type="NodePoint"/>
-                    <node idObject="80" type="NodePoint"/>
+                    <node idObject="145" type="NodePoint"/>
+                    <node idObject="146" type="NodePoint"/>
+                    <node idObject="147" type="NodePoint"/>
+                    <node idObject="148" type="NodePoint"/>
+                    <node idObject="149" type="NodePoint"/>
+                    <node idObject="150" type="NodePoint"/>
+                    <node idObject="151" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="slit" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="152" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="slit" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="153" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="slit" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="154" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="slit" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="155" type="NodePoint"/>
+                    <node idObject="156" type="NodePoint"/>
+                    <node idObject="157" type="NodePoint"/>
+                    <node idObject="158" type="NodePoint"/>
+                    <node idObject="159" type="NodePoint"/>
+                    <node idObject="160" type="NodePoint"/>
+                    <node idObject="161" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="slit" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="162" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="slit" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="163" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="slit" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="164" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="slit" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
                 </nodes>
                 <iPaths>
-                    <record path="87"/>
+                    <record path="168"/>
+                    <record path="171"/>
+                    <record path="174"/>
+                    <record path="177"/>
+                    <record path="180"/>
+                    <record path="183"/>
+                    <record path="186"/>
+                    <record path="189"/>
+                </iPaths>
+            </piece>
+            <piece color="#ffffff" fill="nobrush" forbidFlipping="false" hideMainPath="false" id="248" inLayout="true" locked="false" mx="-36.1885" my="-3.53683" name="Back Panel" seamAllowance="true" united="false" version="2" width="1.3">
+                <data annotation="" foldPosition="Undefined" fontSize="44" height="1.67541" letter="" mx="-429.161" my="681.73" onFold="false" orientation="Undefined" quantity="1" rotation="0" rotationWay="None" tilt="None" visible="true" width="6.22089">
+                    <line alignment="0" bold="false" italic="false" sfIncrement="0" text="%pName%"/>
+                </data>
+                <patternInfo fontSize="0" height="2" mx="-536.205" my="679.843" rotation="0" visible="true" width="3"/>
+                <grainline arrowLength="1.27" arrows="0" length="2.667" mx="-318.883" my="768.038" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="218" type="NodePoint"/>
+                    <node idObject="219" type="NodePoint"/>
+                    <node idObject="220" type="NodePoint"/>
+                    <node idObject="221" type="NodePoint"/>
+                    <node idObject="222" type="NodePoint"/>
+                    <node idObject="223" type="NodePoint"/>
+                    <node idObject="224" type="NodePoint"/>
+                    <node idObject="225" type="NodePoint"/>
+                    <node idObject="226" type="NodePoint"/>
+                    <node idObject="227" type="NodePoint"/>
+                    <node idObject="228" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="vExternal" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="229" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="vExternal" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="230" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="vInternal" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="231" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="vExternal" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="232" notch="true" notchAngle="0" notchCount="1" notchLength="1.25" notchSubtype="straightforward" notchType="vExternal" notchWidth="0.5" showNotch="true" showSecondNotch="true" type="NodePoint"/>
+                    <node idObject="233" type="NodePoint"/>
+                    <node idObject="234" type="NodePoint"/>
+                    <node idObject="235" type="NodePoint"/>
+                    <node idObject="236" type="NodePoint"/>
+                    <node idObject="237" type="NodePoint"/>
+                    <node idObject="238" type="NodePoint"/>
+                    <node idObject="239" type="NodePoint"/>
+                    <node idObject="240" type="NodePoint"/>
+                    <node idObject="241" type="NodePoint"/>
+                    <node idObject="242" type="NodePoint"/>
+                    <node idObject="243" type="NodePoint"/>
+                    <node idObject="244" type="NodePoint"/>
+                    <node idObject="245" type="NodePoint"/>
+                    <node idObject="246" type="NodePoint"/>
+                    <node idObject="247" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="265"/>
+                    <record path="276"/>
                 </iPaths>
             </piece>
         </pieces>
@@ -227,6 +588,26 @@
                 <item object="67" tool="67"/>
                 <item object="68" tool="68"/>
                 <item object="69" tool="69"/>
+            </group>
+            <group groupColor="black" id="194" lineType="solidLine" lineWeight="0" locked="false" name="front_webbing" visible="false">
+                <item object="120" tool="120"/>
+                <item object="121" tool="121"/>
+                <item object="122" tool="122"/>
+                <item object="123" tool="123"/>
+                <item object="125" tool="125"/>
+                <item object="126" tool="126"/>
+                <item object="129" tool="128"/>
+                <item object="130" tool="128"/>
+                <item object="133" tool="128"/>
+                <item object="135" tool="128"/>
+                <item object="136" tool="128"/>
+                <item object="137" tool="137"/>
+                <item object="138" tool="138"/>
+                <item object="140" tool="140"/>
+                <item object="141" tool="141"/>
+                <item object="143" tool="143"/>
+                <item object="144" tool="144"/>
+                <item object="132" tool="128"/>
             </group>
         </groups>
         <images/>
